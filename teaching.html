@@ -14,18 +14,18 @@
 
 
     <meta charset="utf-8">
-    <title>Yan Holtz's material for teaching data analytics and data visualization.</title>
+    <title>Jaziel Flores's material for teaching data analytics and data visualization.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="This is the teaching section of Yan Holtz's homepage. You will find material for lectures and practical concerning data analytics and dataviz">
     <meta name="keywords" content="Consulting,Freelance,Datascience,Training,Data,Dataviz,Datavisualization,Plot,Chart,Graph,R,Python,D3,Learning,Caveat,Pitfall,Mistake,Classification">
     <meta name="author" content="Yan Holtz">
-    <link rel="icon" href="img/logo/Home_single_small.png">
+    <link rel="icon" href="img/logo/Home_single.png">
 
     <!-- Control appearance when share by social media -->
-    <meta property="og:title" content="Yan Holtz's material for teaching data analytics and data visualization." />
+    <meta property="og:title" content="Jaziel FLores's material for teaching data analytics and data visualization." />
     <meta property="og:image" content="img/logo/logo.png" />
     <meta property="og:description" content="This is the teaching section of Yan Holtz's homepage. You will find material for lectures and practical concerning data analytics and dataviz" />
-    <meta property='og:url' content="https://www.yan-holtz.com/blog.html" />
+    <meta property='og:url' content="dsdsd" />
     <meta property="og:type" content="website" />
 
     <!-- Bootstrap core CSS -->
@@ -53,7 +53,7 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
         <a href="index.html">
-          &larr; YAN HOLTZ HOMEPAGE
+          &larr; JAZIEL FLORES HOMEPAGE
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -111,7 +111,9 @@
         </li>
       </ul>
       <br><br>
-      <center><p style="max-width: 700px">I love sharing my passion for <u>data analytics</u> and <u>data visualization</u>. If you're interested in attending a workshop or want to organize one for your team, please <a class="js-scroll-trigger" href="#contact">contact me</a>.</p></center>
+      <center><p style="max-width: 700px"> I love sharing my passion for <u>
+        data analytics</u> and <u>data visualization</u>.
+        If you're interested in attending a workshop or want to organize one for your team, please <a class="js-scroll-trigger" href="#contact">contact me</a>.</p></center>
       <br>
       <center><p style="max-width: 700px"><u>Note:</u> password for corrections are <code>ilovecheese</code> and <code>ilovewine</code></p></center>
   </div>
@@ -301,20 +303,6 @@
 </section>
 
 
-<!-- ======================================================================= -->
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ======================= MODAL SECTION =============================== -->
 
 <!-- MODAL -->
@@ -440,7 +428,10 @@ function validatePass2(){
          <div class="col-lg-8 text-center">
            <br><br><br>
            <h2 class="section-heading text-uppercase" style="color: black">Contact</h2>
-           <p>Feel free to contact me for any question. For open source project, please open an issue or pull request on <a href="https://github.com/holtzy/">Github</a>. If you want to follow my work, reach me on <a href="https://twitter.com/R_Graph_Gallery">Twitter</a>. Otherwise, send me an email at <a href="mailto:yan.holtz.data@gmail.com">yan.holtz.data@gmail.com</a>.</p>
+           <p>Feel free to contact me for any question. For open source project, please open an issue or pull request on 
+              <a href="https://github.com/holtzy/">Github</a>.
+               If you want to follow my work, reach me on <a href="https://twitter.com/R_Graph_Gallery">Twitter</a>.
+              Otherwise, send me an email at <a href="mailto:yan.holtz.data@gmail.com">yan.holtz.data@gmail.com</a>.</p>
            <div style="text-align:center">
               <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://github.com/holtzy/data_to_viz">Github</a>
               <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://twitter.com/R_Graph_Gallery">Twitter</a>
@@ -451,13 +442,6 @@ function validatePass2(){
        </div>
     </div>
   </section>
-
-
-
-
-
-
-
 
 
 <!-- ======================== MAP SECTION ============================ -->
@@ -473,268 +457,37 @@ function validatePass2(){
        }
     </style>
   </head>
+
   <body>
+    <!--The div element for the map -->
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 300px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+        background-color: grey;
+        opacity: 1
+      }
+    </style>
+    <!-- center: { lat: 43.61092, lng: 3.87723 } -->
+  
     <!--The div element for the map -->
     <div id="map"></div>
     <script>
-      function initMap() {
-        // Styles a map in night mode.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: {lat: 43.61092, lng: 3.87723},
-          styles: [
-                    {
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#1d2c4d"
-                        }
-                      ]
-                    },
-                    {
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#8ec3b9"
-                        }
-                      ]
-                    },
-                    {
-                      "elementType": "labels.text.stroke",
-                      "stylers": [
-                        {
-                          "color": "#1a3646"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "administrative.country",
-                      "elementType": "geometry.stroke",
-                      "stylers": [
-                        {
-                          "color": "#4b6878"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "administrative.land_parcel",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#64779e"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "administrative.province",
-                      "elementType": "geometry.stroke",
-                      "stylers": [
-                        {
-                          "color": "#4b6878"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "landscape.man_made",
-                      "elementType": "geometry.stroke",
-                      "stylers": [
-                        {
-                          "color": "#334e87"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "landscape.natural",
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#023e58"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "poi",
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#283d6a"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "poi",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#6f9ba5"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "poi",
-                      "elementType": "labels.text.stroke",
-                      "stylers": [
-                        {
-                          "color": "#1d2c4d"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "poi.park",
-                      "elementType": "geometry.fill",
-                      "stylers": [
-                        {
-                          "color": "#023e58"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "poi.park",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#3C7680"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road",
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#304a7d"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#98a5be"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road",
-                      "elementType": "labels.text.stroke",
-                      "stylers": [
-                        {
-                          "color": "#1d2c4d"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road.highway",
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#2c6675"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road.highway",
-                      "elementType": "geometry.stroke",
-                      "stylers": [
-                        {
-                          "color": "#255763"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road.highway",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#b0d5ce"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "road.highway",
-                      "elementType": "labels.text.stroke",
-                      "stylers": [
-                        {
-                          "color": "#023e58"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "transit",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#98a5be"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "transit",
-                      "elementType": "labels.text.stroke",
-                      "stylers": [
-                        {
-                          "color": "#1d2c4d"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "transit.line",
-                      "elementType": "geometry.fill",
-                      "stylers": [
-                        {
-                          "color": "#283d6a"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "transit.station",
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#3a4762"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "water",
-                      "elementType": "geometry",
-                      "stylers": [
-                        {
-                          "color": "#0e1626"
-                        }
-                      ]
-                    },
-                    {
-                      "featureType": "water",
-                      "elementType": "labels.text.fill",
-                      "stylers": [
-                        {
-                          "color": "#4e6d70"
-                        }
-                      ]
-                    }
-                  ]
-        });
-      var contentString = '<div id="content" style="font-size: 14px; line-height: 20px">Montpellier, France<br><a href="mailto:yan.holtz.data@gmail.com">yan.holtz.data@gmail.com</a></div>'
-      var infowindow = new google.maps.InfoWindow({
-        content: contentString
-      });
-      var marker = new google.maps.Marker({position: {lat: 43.61092, lng: 3.52}, map: map})
-      marker.addListener('click', function() {
-          infowindow.open(map, marker);
-      });
-    }
+      var mymap = L.map('map').setView([19.432241, 	-99.177254], 7);
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 50,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken: 'pk.eyJ1IjoiaG9sdHp5YW4iLCJhIjoiY2tmczBrd3BrMGJodDJ0bXQ5aW9sZXJ6eCJ9.8zTEkfZ54u4TvDGNjNh-Cg'
+      }).addTo(mymap);
+      var marker = L.marker([19.432241, -99.177254]).addTo(mymap);
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&callback=initMap">
-    </script>
-
-
-
-
-
-
+  
 
 
 <!-- ======================= FOOTER SECTION ================================ -->
