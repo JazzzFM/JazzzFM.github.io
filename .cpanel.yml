@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/jazzzfmx/public_html/
+    - /bin/cp -R /home1/jazzzfm/repositories/JazzzFMhub.io $DEPLOYPATH
